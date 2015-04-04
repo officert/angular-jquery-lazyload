@@ -7,7 +7,8 @@ angular.module('angular.jquery.lazyload').directive('imgLazyBg', [
       scope: {
         imgLazyBg: '@',
         effect: '@',
-        event: '@'
+        event: '@',
+        threshold: '@'
       },
       compile: function(element, attrs) {
 
@@ -19,7 +20,8 @@ angular.module('angular.jquery.lazyload').directive('imgLazyBg', [
           post: function link(scope, element, attrs) {
             element.lazyload({
               effect: scope.effect || "fadeIn",
-              event: scope.event
+              event: scope.event,
+              threshold: scope.threshold
             });
 
             if (scope.event) {
