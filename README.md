@@ -5,7 +5,7 @@ Angular directives for Mika Tuupola's jQuery lazy load plugin
 These are simple angular wrappers around his plugin.
 
 * Click [Here](http://www.appelsiini.net/projects/lazyload) for documentation about his jQuery plugin
-* Click [Here](https://github.com/tuupola/jquery_lazyload) for his github report for the project
+* Click [Here](https://github.com/tuupola/jquery_lazyload) for his github repo for the project
 
 
 ## Installation
