@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#images-example {
+  min-height: 4000px;
+  padding-top: 1200px;
+}

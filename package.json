@@ -1,0 +1,24 @@
+{
+  "name": "angular-jquery-lazyload",
+  "version": "0.0.1",
+  "description": "https://github.com/officert/angular-jquery-lazyload",
+  "url": "https://github.com/officert/angular-jquery-lazyload",
+  "author": "Tim Officer",
+  "engines": {
+    "node": "0.12.2"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "3.8.11",
+    "gulp-concat": "2.5.2",
+    "gulp-if": "1.2.4",
+    "gulp-inject": "1.2.0",
+    "gulp-jshint": "1.8.4",
+    "gulp-less": "1.3.6",
+    "gulp-replace": "0.5.2",
+    "gulp-uglifyjs": "0.6.0",
+    "gulp-watch": "1.2.0",
+    "jshint-stylish": "0.4.0",
+    "shelljs": "^0.3.0"
+  }
+}

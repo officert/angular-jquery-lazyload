@@ -1,0 +1,26 @@
+{
+  "name": "angular-jquery-lazyload",
+  "version": "0.0.1",
+  "homepage": "https://github.com/officert/angular-jquery-lazyload",
+  "authors": [
+    "Tim Officer  <timothyofficer@gmail.com>",
+    "Mika Tuupola <tuupola@appelsiini.net>"
+  ],
+  "description": "angular directive for Mika Tuupola's jQuery plugin for lazy loading images",
+  "main": [
+    "angular.jquery.lazyload.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    ".bowerrc",
+    ".gitignore",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery.lazyload": "1.9.5",
+    "jquery": "2.1.3"
+  }
+}
