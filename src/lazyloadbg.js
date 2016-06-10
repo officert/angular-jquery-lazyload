@@ -15,7 +15,6 @@ angular.module('angular.jquery.lazyload').directive('imgLazyBg', [
         return {
           pre: function preLink(scope, iElement, iAttrs, controller) {
             iElement.attr('data-original', scope.imgLazyBg);
-            //iElement.attr('style', 'background-image:url(\'' + scope.imgLazyBg + '\')');
           },
           post: function link(scope, element, attrs) {
             element.lazyload({
@@ -26,7 +25,6 @@ angular.module('angular.jquery.lazyload').directive('imgLazyBg', [
 
             if (scope.event) {
               scope.$on(scope.event, function(data) {
-                console.log('TRIGGER IMAGES');
                 element.trigger(scope.event);
               });
             }
