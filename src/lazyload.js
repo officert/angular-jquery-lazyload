@@ -23,8 +23,6 @@ angular.module('angular.jquery.lazyload').directive('imgLazy', [
 
         if (scope.event) {
           scope.$on(scope.event, function(data) {
-            console.log('LOADDDDD');
-
             element.trigger(scope.event);
           });
         }

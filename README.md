@@ -12,7 +12,7 @@ These are simple angular wrappers around his plugin.
 
 Via Bower:
 ```javascript
-bower install angular-jquery-lazyload
+bower install angular-jquery-lazyload --save
 ```
 
 Add the following script to your page:

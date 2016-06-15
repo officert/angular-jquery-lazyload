@@ -17,8 +17,6 @@ angular.module('angular.jquery.lazyload').directive('imgLazy', [
       link: function(scope, element, attrs) {
         element.removeAttr('src');
 
-        //element.addClass('lazy');
-
         element.lazyload({
           effect: scope.effect || "fadeIn",
           event: scope.event,
@@ -27,8 +25,6 @@ angular.module('angular.jquery.lazyload').directive('imgLazy', [
 
         if (scope.event) {
           scope.$on(scope.event, function(data) {
-            console.log('LOADDDDD');
-
             element.trigger(scope.event);
           });
         }
@@ -46,24 +42,24 @@ angular.module('angular.jquery.lazyload').directive('imgLazyBg', [
       scope: {
         imgLazyBg: '@',
         effect: '@',
-        event: '@'
+        event: '@',
+        threshold: '@'
       },
       compile: function(element, attrs) {
 
         return {
           pre: function preLink(scope, iElement, iAttrs, controller) {
             iElement.attr('data-original', scope.imgLazyBg);
-            //iElement.attr('style', 'background-image:url(\'' + scope.imgLazyBg + '\')');
           },
           post: function link(scope, element, attrs) {
             element.lazyload({
               effect: scope.effect || "fadeIn",
-              event: scope.event
+              event: scope.event,
+              threshold: scope.threshold
             });
 
             if (scope.event) {
               scope.$on(scope.event, function(data) {
-                console.log('TRIGGER IMAGES');
                 element.trigger(scope.event);
               });
             }
